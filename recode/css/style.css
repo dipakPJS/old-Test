@@ -1,0 +1,341 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  
+}
+
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(to bottom, red, blue, #ffa801,
+  #3c40c6,#d2dae2, #192a56, #fbc531, #e84118, yellow, green, orangered,#8e44ad,
+  #d35400);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-corner{
+  display: none;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+
+/* ==== universal css for buttons ==== */
+
+.btn {
+  padding: 10px 40px;
+  font-size: 15px;
+  font-weight: 900;
+  -webkit-transition: 0.6s ease-in-out;
+  transition: 0.6s ease-in-out;
+  border-radius: 10px;
+
+  background-color: #ffffff;
+  border-radius: 10px;
+  color: black;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn-add,
+.btn-save {
+  margin-right: 20px;
+}
+
+/* ========== css for product list page starts ========= */
+.container {
+  width: 100%;
+  height: 100vh;
+}
+
+.navbar {
+  width: 90%;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 auto;
+  color: white;
+
+  -webkit-backdrop-filter: blur(3px);
+
+  backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  background-color: #1e272e;
+  border-radius: 20px;
+  box-shadow: inset 0 0 10px 5px black;
+}
+
+/* product list page button section */
+a {
+  text-decoration: none;
+}
+
+.btn-add {
+  color: #0652dd;
+  text-decoration: none;
+  border: 2px solid #0652dd;
+}
+
+.btn-add:hover {
+  background-color: #0652dd;
+  color: white;
+}
+
+.btn-delete {
+  color: red;
+  outline: none !important;
+  border: 2px solid red;
+}
+
+.btn-delete:hover {
+  background-color: red;
+  color: white;
+}
+
+/* == Styling for product-list section starts == */
+
+.product-list {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+  height: 75vh;
+  overflow: scroll;
+
+  -webkit-backdrop-filter: blur(3px);
+
+  backdrop-filter: blur(3px);
+  background-color: #1e272e;
+  border-radius: 20px;
+  box-shadow: inset 0 0 10px 5px black;
+}
+
+.product-list .row {
+  padding: 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: repeat(4, 3fr);
+  grid-template-columns: repeat(4, 3fr);
+  -webkit-column-gap: 30px;
+  -moz-column-gap: 30px;
+  column-gap: 30px;
+  row-gap: 30px;
+  height: 100%;
+  width: 100%;
+  overflow: scroll;
+}
+
+.product-list .row .main-item {
+  height: 250px;
+  width: auto;
+  overflow-x: scroll;
+  -webkit-transition: 0.6s ease-in-out;
+  transition: 0.6s ease-in-out;
+  padding: 10px;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 1.3;
+  color: black;
+
+  -webkit-backdrop-filter: blur(3px);
+
+  backdrop-filter: blur(3px);
+  background-color: #fff200;
+  border-radius: 20px;
+  box-shadow: inset 0 0 5px 3px black;
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.product-list .row .main-item:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  cursor: pointer;
+  box-shadow: 0 0 20px 5px yellow;
+}
+
+.delete-checkbox {
+  transform: scale(3);
+  margin-right: 200px;
+  cursor: pointer;
+}
+
+/* == Styling for product-list section ends == */
+
+/* === styling for footer banner starts === */
+
+.footer-banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 20px 0;
+  width: 90%;
+  margin: 20px auto 0 auto;
+  color: white;
+
+  -webkit-backdrop-filter: blur(3px);
+
+  backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  background-color: #1e272e;
+  border-radius: 20px;
+  box-shadow: inset 0 0 10px 5px black;
+}
+
+.footer-banner span {
+  color: yellow;
+  font-size: 25px;
+}
+
+/* === styling for footer banner ends === */
+
+/* ========== css for product list page ends ========= */
+
+/* === css for product Add page starts === */
+
+/* styling for buttons */
+
+.btn-save {
+  color: green;
+  border: 2px solid green;
+}
+
+.btn-save:hover {
+  background-color: green;
+  color: white;
+}
+
+.btn-cancel {
+  color: black;
+  border: 2px solid rgb(249, 249, 249);
+}
+
+.btn-cancel:hover {
+  background-color: black;
+  color: white;
+}
+
+/* === Main form section starts === */
+
+#product_form .form-section {
+  height: 75vh;
+  width: 90%;
+  margin: 20px auto 0 auto;
+  overflow: scroll;
+
+  -webkit-backdrop-filter: blur(3px);
+
+  backdrop-filter: blur(3px);
+  background-color: #1e272e;
+  border-radius: 20px;
+  box-shadow: inset 0 0 10px 5px black;
+}
+
+#product_form .main-form {
+  margin: 50px 0 0 50px;
+  color: white;
+  width: 500px;
+}
+
+#product_form .form-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#product_form .form-div2 input {
+  height: 50px;
+  width: 300px;
+  padding: 0 10px;
+  caret-color: red;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  border: none;
+  outline: none;
+  color: black !important;
+
+  -webkit-backdrop-filter: blur(3px);
+
+  backdrop-filter: blur(3px);
+  background-color: #fff200 !important;
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px 3px black;
+}
+
+/* ======= now styling for select ======= */
+
+#productType {
+  height: 40px;
+  width: 200px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-right: 70px;
+  text-align: center;
+  border: none;
+  outline: none;
+  color: black;
+  -webkit-backdrop-filter: blur(3px);
+
+  backdrop-filter: blur(3px);
+  background-color: #fff200;
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px 3px black;
+}
+
+.size,
+.weight,
+.height,
+.width,
+.length {
+  display: none;
+}
+
+/* === Main form section ends === */
+
+/* === css for product Add page ends === */
